@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "A student portolio",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "dependencies": {
+    "directory-tree": "^2.2.4",
+    "jest": "^25.1.0",
+    "jest-json-schema": "^2.1.0",
+    "lodash": "^4.17.21"
+  },
+  "jest": {
+    "clearMocks": true,
+    "testEnvironment": "node",
+    "watchPathIgnorePatterns": [
+      "node_modules"
+    ]
+  }
+}
