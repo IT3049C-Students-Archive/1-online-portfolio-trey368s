@@ -24,15 +24,32 @@ function geoFindMe() {
       .then(function (data) {
         console.log(data.properties.relativeLocation.properties.city);
         const city = data.properties.relativeLocation.properties.city;
+        document.getElementById("city").innerHTML = "City: " + city;
       })
-
     fetch('https://api.weather.gov/points/' + latitude + "," + longitude)
       .then(function (response) {
         return response.json();
       })
       .then(function (data) {
-        console.log(data.properties.forecastHourly)
         const forecastURL = data.properties.forecastHourly;
+        fetch(forecastURL)
+          .then(function (response) {
+            return response.json();
+          })
+          .then(function (data) {
+            console.log(data.properties.periods[0].temperature)
+            const temperature = data.properties.periods[0].temperature;
+            document.getElementById("temperature").innerHTML = "Temperature: " + temperature + "°F";
+          })
+        fetch(forecastURL)
+          .then(function (response) {
+            return response.json();
+          })
+          .then(function (data) {
+            console.log(data.properties.periods[0].shortForecast)
+            const shortForecast = data.properties.periods[0].shortForecast;
+            document.getElementById("weather").innerHTML = "Weather: " + shortForecast;
+          })
       })
   }
 
