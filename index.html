@@ -1,42 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- Bootstrap Styles-->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
 
-    <!-- INCLUDE STYLES FILE HERE -->
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trey Stegeman</title>
+  <!-- Bootstrap Styles-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <!-- INCLUDE STYLES FILE HERE -->
+  <link rel="stylesheet" href="resources/styles/styles.css">
+</head>
 
-  <body>
-    <div class="container">
-      <!-- WORK FROM INSIDE THIS CONTAINER-->
+<body>
+  <div class="container">
+    <!-- WORK FROM INSIDE THIS CONTAINER-->
+    <h1>Trey Stegeman</h1>
+    <img src="resources/images/photo.jpg" width=700 height=400 />
+    <div class="section" id="personalBackground">
+      <h2>Personal background</h2>
+      <p>My name is Trey Stegeman. I am a shophomore at the University of Cincinnnati,
+        I am taking a major in Information Technology and Minor in Business Analytics.</p>
     </div>
+    <div class="section" id="experience">
+      <h2>Work and Development Experience</h2>
+      <ol>
+        <li>Property Investments of Note</li>
+        <li>Dominos Finnytown</li>
+      </ol>
+    </div>
+    <div class="section" id="programmingLanguages">
+      <h2>Programming Languages</h2>
+      <ol>
+        <li>Java</li>
+        <li>C+</li>
+        <li>Python</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>SQL</li>
+      </ol>
+    </div>
+    <div class="section" id="achievements">
+      <h2>Achievements and Certifications</h2>
+      <ul>
+        <li>Ealge Scout</li>
+        <li>AWS Certified Cloud Practitioner</li>
+        <li>Microsoft Azure Fundementals Certification</li>
+      </ul>
+    </div>
+    <div class="section" id="games">
+      <h2>Favorite Games</h2>
+      <p>Some of my favorite games I like to play are stategy games. I enjoy games like
+        Sid Meier's Civilization, Hearts of Iron, and Valheim.
+      </p>
+    </div>
+    <div class="section" id="webAPI">
+      <h2>Web API</h2>
+      <button id="find-me">Get location and weather</button>
+      <p id="status"></p>
+      <a id="map-link" target="_blank"></a>
+      <p id="city"></p>
+      <p id="weather"></p>
+      <p id="temperature"></p>
+    </div>
+  </div>
 
-    <!-- INCLUDE SCRIPTS FILE HERE -->
+  <!-- INCLUDE SCRIPTS FILE HERE -->
+  <script type="text/javascript" src="resources/scripts/index.js"></script>
 
-    <!-- Bootstrap Scripts-->
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!-- Bootstrap Scripts-->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
